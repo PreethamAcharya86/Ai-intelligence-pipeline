@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FrontierAtlas Intelligence Ingestion pipeline overview." />
+    <title>FrontierAtlas | Intelligence Ingestion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top"><span class="brand-mark">F</span> FrontierAtlas</a>
+        <a class="nav-link" href="#architecture">Architecture</a>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="eyebrow"><span></span> AI ecosystem intelligence</div>
+        <h1>Source-backed intelligence,<br /><em>built to scale.</em></h1>
+        <p class="hero-copy">A resilient ingestion pipeline for collecting and structuring AI startups, products, research papers, jobs, and news - while preserving every record's provenance.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#architecture">Explore the system <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="../README.md">View project README</a>
+        </div>
+        <div class="signal-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+
+      <section class="metrics" aria-label="Pipeline scope">
+        <article><strong>500K+</strong><span>Scale-ready entities</span></article>
+        <article><strong>24h</strong><span>Freshness guarantee</span></article>
+        <article><strong>6</strong><span>Export-ready data tabs</span></article>
+        <article><strong>0</strong><span>Fabricated records</span></article>
+      </section>
+
+      <section class="architecture" id="architecture">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> How it works</p>
+          <h2>From source to<br />intelligence graph.</h2>
+        </div>
+        <div class="flow">
+          <article class="flow-card">
+            <span class="step">01</span>
+            <div class="icon">⌁</div>
+            <h3>Collect</h3>
+            <p>Async collectors ingest approved APIs, RSS feeds, and directory exports with bounded concurrency.</p>
+          </article>
+          <article class="flow-card active">
+            <span class="step">02</span>
+            <div class="icon">◇</div>
+            <h3>Verify</h3>
+            <p>Dates are normalized, URLs are deduplicated, and every accepted record remains traceable to its origin.</p>
+          </article>
+          <article class="flow-card">
+            <span class="step">03</span>
+            <div class="icon">↗</div>
+            <h3>Resolve</h3>
+            <p>Deterministic matching canonicalizes messy company and product names with an auditable mapping log.</p>
+          </article>
+          <article class="flow-card">
+            <span class="step">04</span>
+            <div class="icon">▦</div>
+            <h3>Export</h3>
+            <p>Clean, Google-Sheets-ready tables make the latest intelligence simple to inspect and share.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="outputs">
+        <div>
+          <p class="eyebrow"><span></span> Data outputs</p>
+          <h2>One pipeline.<br />Six useful views.</h2>
+        </div>
+        <div class="output-grid">
+          <div class="output-item"><b>01</b><span>Startups</span><small>Canonical organizations</small></div>
+          <div class="output-item"><b>02</b><span>Products</span><small>Pricing and company links</small></div>
+          <div class="output-item"><b>03</b><span>Research Papers</span><small>arXiv and GitHub metrics</small></div>
+          <div class="output-item"><b>04</b><span>Jobs</span><small>24-hour fresh opportunities</small></div>
+          <div class="output-item"><b>05</b><span>News</span><small>Full text and timestamps</small></div>
+          <div class="output-item"><b>06</b><span>Entity Mapping</span><small>Raw-to-canonical audit trail</small></div>
+        </div>
+      </section>
+
+      <section class="reliability">
+        <div class="reliability-copy">
+          <p class="eyebrow"><span></span> Production-minded</p>
+          <h2>Reliable by design.</h2>
+          <p>Retries, jittered backoff, semantic LLM chunking, and a durable URL ledger keep the pipeline efficient and honest - even when sources or providers misbehave.</p>
+        </div>
+        <div class="checks">
+          <p><span>✓</span> 429-aware exponential backoff</p>
+          <p><span>✓</span> 413-safe semantic chunking</p>
+          <p><span>✓</span> Source-level failure isolation</p>
+          <p><span>✓</span> Compliance-first collection</p>
+        </div>
+      </section>
+    </main>
+    <footer><span>FRONTIERATLAS / INTELLIGENCE INGESTION</span><span>Built for source fidelity.</span></footer>
+  </body>
+</html>
