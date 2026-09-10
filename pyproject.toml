@@ -1,0 +1,28 @@
+[project]
+name = "frontier-atlas-ingestion"
+version = "0.1.0"
+description = "Source-traceable async ingestion pipeline for AI ecosystem intelligence"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.10,<4",
+  "beautifulsoup4>=4.12,<5",
+  "python-dateutil>=2.9,<3",
+  "rapidfuzz>=3.9,<4",
+]
+
+[project.scripts]
+frontier-ingest = "intel_pipeline.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

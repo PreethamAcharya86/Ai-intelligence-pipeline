@@ -1,0 +1,27 @@
+{
+  "news_rss": [
+    {"name": "OpenAI News", "url": "https://openai.com/news/rss.xml"},
+    {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml"},
+    {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/"},
+    {"name": "AWS Machine Learning Blog", "url": "https://aws.amazon.com/blogs/machine-learning/feed/"},
+    {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/"}
+  ],
+  "job_rss": [
+    {"name": "Remote OK AI", "url": "https://remoteok.com/remote-ai-jobs.rss"},
+    {"name": "We Work Remotely", "url": "https://weworkremotely.com/categories/remote-programming-jobs.rss"}
+  ],
+  "startup_feeds": [
+    {
+      "name": "Approved startup directory export",
+      "path": "data/incoming/startups.jsonl",
+      "format": "jsonl"
+    }
+  ],
+  "product_feeds": [
+    {
+      "name": "Approved product directory export",
+      "path": "data/incoming/products.jsonl",
+      "format": "jsonl"
+    }
+  ]
+}
